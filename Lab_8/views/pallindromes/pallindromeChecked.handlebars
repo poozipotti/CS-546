@@ -1,0 +1,18 @@
+{{#each body}}
+    {{#if @ first}}
+        {{#if isPallindrome }}
+            <p class="pallindrome">{{pallindrome}} is a pallindrome</p>
+        {{else}}
+            <p class="nonpallindrome">{{pallindrome}} is not a pallindrome</li>
+    {{/if}}
+    <h2>past pallindromes</h2>
+    <h3 id="wrongPallindromeLegend" class="legend">red = not a pallindrome</h3><h3 id="rightPallindromeLegend" class = "legend">blue = a pallindrome</h3>
+    <ul>
+    {{/if}}
+    {{#if isPallindrome }}
+        <li class="pallindrome">{{pallindrome}}</li>
+    {{else}}
+        <li class="nonpallindrome">{{pallindrome}}</li>
+    {{/if}}
+{{/each}}
+</ul>
