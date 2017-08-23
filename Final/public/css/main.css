@@ -1,0 +1,99 @@
+*{
+    x-sizing: border-box;
+}
+
+body {
+    background: #FEFEFE;
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    font-size: 15pt;
+
+}
+
+main {
+    margin: auto;
+    width: 50%;
+}
+
+header {
+    border-bottom: 1px solid #AFAFAF;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    margin-bottom: 5px;
+
+}
+form {
+    resize: none;
+    width: 100%;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow-x: auto;
+    font-size: 2rem;
+
+}
+label {
+    font-size: 1.5rem;
+}
+button {
+    background-color: #25915f; /* Green */
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    cursor: hand;
+}
+.legend{
+    font-size: 1rem;
+    font-style: italic;
+}
+ul {
+     list-style-type: none;
+}
+h1 {
+    font-size: 2rem;
+
+}
+
+h2 {
+    font-size: 1.75rem;
+
+}
+
+h3 {
+    font-size: 1.5rem;
+
+}
+
+h4 {
+    font-size: 1.25rem;
+
+}
+
+h5 {
+    font-size: 1.15rem;
+}
+
+h6 {
+    font-size: 1.05rem;
+
+}
+
+p {
+    font-size: 1rem;
+    line-height: 2;
+}
+
+label {
+    font-weight: bold;
+}
+footer{
+    text-align:center
+}
+
+
