@@ -1,0 +1,35 @@
+<h1>Entries:</h1>
+<script src="/public/javascript/deleteStructure.js"></script>
+<script src="/public/javascript/editStructure.js"></script>
+<script src="/public/javascript/addFormField.js"></script>
+{{#each body}}
+<article class="entryInfo" id= {{_id}}>
+	<label> title <p class="editable" id="title">{{title}}</p> </label>
+	<label>type:<p class="editable" id="type"> {{type}}</p></label>
+	<label>blurb:<p class="editable"id="blurb"> {{blurb}} </p>></label>
+	<label>adress:<p class="editable"id="blurb"> /{{slug}} </p>></label>
+	<div id=fields><label>fields:</label>
+		<ul>	
+			{{#each fields}}
+			<div id="firstField" class="field">
+					<li class="canHide" id=label{{@index}}>label:{{this.label}} | type:{{this.type}}<li>
+					<label class="hidden">label: </label><li class="hidden editable fieldLabel">{{this.label}}<li>
+				<div class="hidden"> <label>type:</label>
+					<input type = "radio" name="fieldType{{@index}}" value="smallText">small text<br>
+					<input type = "radio" name="fieldType{{@index}}" value="largeText">large text<br>
+					<input type = "radio" name="fieldType{{@index}}" value="number">number<br>
+					<input type = "radio" name="fieldType{{@index}}" value="checkBox">check box<br>
+					<input type = "radio" name="fieldType{{@index}}" value="picture">picture upload<br>
+				</div>
+			</div>
+			{{/each}}
+		</ul>
+	</div>
+	<button id="newFieldButton" class="hidden">addfield</button>
+	<p>date: {{dateCreated}} </p>
+	<button class="editStructure">edit</button>
+	<button class="deleteStructure">delete</button>
+	<hr>
+</article>
+
+{{/each}}

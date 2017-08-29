@@ -25,16 +25,12 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 form {
-    width: 75%;
+    resize: none;
+    width: 100%;
     margin-bottom: 10px;
     white-space: nowrap;
-
-}
-input{
-    font-size: 2rem;
-    width: 100%;
-margin-bottom: 10px;
     overflow-x: auto;
+    font-size: 3rem;
 
 }
 label {
@@ -92,17 +88,12 @@ p {
     font-size: 1rem;
     line-height: 2;
 }
-li {
- 	font-size: 1rem;
-}
 
 label {
     font-weight: bold;
 }
 footer{
-    text-align:center;
+    text-align:center
 }
 
-.hidden{
-	display:none;
-}
+

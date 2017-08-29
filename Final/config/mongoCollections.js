@@ -23,4 +23,5 @@ let getCollectionFn = (collection) => {
 
 module.exports = {
     structures: getCollectionFn("structure"),
+    entries: getCollectionFn("entry"),
 };

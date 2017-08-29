@@ -1,5 +1,27 @@
 <script src="/public/javascript/addFormField.js"></script>
+<script src="/public/javascript/submitStructure.js"></script>
 <form id="newStructure">
-	<input type="text" placeholder="field 1">
+	<input type="text" placeholder="title" id="titleInput"><br>
+	<input type="text" placeholder="structure type" id="typeInput"><br>
+	<input type="text" placeholder="blurb" id="blurbInput"><br>
+	<div class="field" id="firstField">
+		<input type="text" placeholder="field 1 label" class="fieldLabel">
+		<label >type: <br>
+			<input type = "radio" name="fieldType0" value="smallText">small text<br>
+			<input type = "radio" name="fieldType0" value="largeText">large text<br>
+			<input type = "radio" name="fieldType0" value="number">number<br>
+			<input type = "radio" name="fieldType0" value="checkBox">check box<br>
+			<input type = "radio" name="fieldType0" value="picture">picture upload<br>
+			<input type = "radio" name="fieldType0" value="URL">Page URL<br>
+		</label>
+	</div>
 </form>
 	<button type="button" id="newFieldButton" >add new field</button>
+	<button type="button" id="formSubmit" >submit</button>
+
+
+
+
+
+
+

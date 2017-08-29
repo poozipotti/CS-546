@@ -1,5 +1,7 @@
-const pallindromeData = require("./pallindromes");
+const structureData = require("./structures");
+const entryData = require("./entries");
 
 module.exports = {
-    pallindromes : pallindromeData,
+    structures : structureData,
+    entries : entryData
 };
